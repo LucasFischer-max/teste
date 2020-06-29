@@ -5,17 +5,16 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="estilo.css">
-		<link rel="stylesheet" type="text/css" href="java.js">
+		<link rel="stylesheet" type="text/javascript" href="script.js">
 		<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Karla&family=Roboto&display=swap" rel="stylesheet">
+		<title>Gewinner</title>
+		<link href="https://mundoeducacao.uol.com.br/favicon.ico" rel="shortcut icon" title="Favicon" />
 	</head>
 	<header>
-		<div>
-			<title>Gewinner</title>
-		</div>
-			<nav class="menu">
+			<nav class="menu" id="menu">
 				<ul>
 					<li id="btn-menu-mobile"><a href="javascript:void(0)" onclick="openNav()">&#9776;</a></li>
-					<li class="btn-menu" ><a href="#">Sobre</a></li>
+					<li class="btn-menu" ><a href="#" onclick="">Sobre</a></li>
 					<li class="btn-menu"><a href="#">Robôs</a></li>
 					<li class="btn-menu"><a href="#">Competições</a></li>
 					<li class="btn-menu"><a href="#">Contato</a></li>
@@ -24,14 +23,14 @@
 			<div id="main">
 		<h1 class="site-title">Gewinner</h1>
 	</header>
-	<div class="grid">	
-		<section class="quem-somos">		
+	<div class="grid" >	
+		<section class="quem-somos" id="quem-somos" >		
 			<h1 class="subtitle">Quem somos?</h1>
 			<img src="./img/equipe.jpg" class="img-equipe" alt="Equipe">
 			<h3 class="texto">A equipe Gewinner é uma equipe de robótica do colégio Sinodal de São Leopoldo.</h3>
 		</section>
 	</div>
-	<section class="cada-um">
+	<section class="cada-um" data-aos="fade-left">
 		<div class="grid">
 			<div>
 				<img class="imagem" src="./img/Lucas.jpg">
@@ -54,24 +53,24 @@
 		<div class="todos">
 			<div class="robos">
 				<div class="primeira">
-					<li><a href="#"><img src="./img/1.jpg"></a></li>
-					<h2>Regional-2018</h2>
+					<li><a href="./pag/regional2018robo.html"><img src="./img/1.jpg"></a></li>
+					<h2>Regional 2018</h2>
 				</div>
 				<div class="segunda">
-					<li><a href="#"><img src="./img/2.jpg"></a></li>
+					<li><a href="./pag/nacional2018robo.html"><img src="./img/2.jpg"></a></li>
 					<h2>Nacional 2018</h2>
 				</div>
 				<div class="terceira">
-					<li><a href="#"><img src="./img/3.jpg"></a></li>
+					<li><a href="./pag/regional2019robo.html"><img src="./img/3.jpg"></a></li>
 					<h2>Regional 2019</h2>
 				</div>
 				<div class="quarta">
-					<li><a href="#"><img src="./img/4.jpeg"></a></li>
+					<li><a href="./pag/nacional2019robo.html"><img src="./img/4.jpeg"></a></li>
 					<h2>Nacional 2019</h2>
 				</div>	
 			</div>
 			<div class="quinta">
-				<li><a href="#"><img class="diferente" src="./img/5.jpg"></a></li>
+				<li><a href="./pag/regional2020robo.html"><img class="diferente" src="./img/5.jpg"></a></li>
 				<h2>Regional 2020</h2>
 			</div>
 		</div>
@@ -82,7 +81,7 @@
 			<div class="robos">
 				<div class="primeira">
 					<li><a href="#"><img src="./img/2018.jpg"></a></li>
-					<h2>Regional-2018</h2>
+					<h2>Regional 2018</h2>
 				</div>
 				<div class="segunda">
 					<li><a href="#"><img src="./img/2018_2.jpeg"></a></li>
@@ -107,13 +106,20 @@
 		<h1 class="subtitle3">Contato</h1>
 		<nav class="contato">
 			<ul>
-				<li><a href="#"><img class="imagemm" src="./img/instagram.png"></a></li>
-				<li><a href="#"></a></li>
+				<li><a href="https://www.instagram.com/fischer_155/"><img class="imagemm" src="./img/instagram.png"></a></li>
+				<li><a href="https://www.youtube.com/channel/UC0ukw_MNVFE8hRK55J8CnKA?"><img class="youtube" src="./img/youtube.png"></a></li>
 				<li><a href="#"></a></li>
 				<li><a href="#"></a></li>
 			</ul>
 		</nav>
 	</div>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  	<script>
+    AOS.init({
+    	offset: 400, 
+    	duration: 1000
+    });
+  </script>
 </body>
 
 
