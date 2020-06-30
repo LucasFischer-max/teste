@@ -1,6 +1,8 @@
 <!DOCTYPE HTML>
 	<head>
 		<link rel="stylesheet" type="text/css" href="../estilo.css">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+		<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Karla&family=Roboto&display=swap" rel="stylesheet">
 		<title>Robô 2019</title>
 	</head>
 	<body>
@@ -8,16 +10,24 @@
 			<a class="paginas" href="../index.html">G</a>
 		</nav>
 		<h1 class="site-title" id="pag">O Robô da Etapa Regional de 2019</h1>
-		<div class="conteudo">
+		<div class="conteudo" data-aos="fade-right">
 			<img src="../img/3.jpg">
 			<h3>Esse foi o terceiro robô da nossa equipe. Ele tinha basicamente todos os sensores e forma de garra que o último, mas em uma nova forma, muito mais rígida. Aprendemos com o robô anterior, e nos concentramos em melhorar a estrutura, o que conseguimos muito bem. </h3>
 		</div>
-		<div class="conteudo2">
+		<div class="conteudo2" data-aos="fade-left">
 			<h3>Um problema que encontramos na competição, foi que o robô não conseguia passar quebra-molas muito bem, porque usávamos uma roda boba atrás. Assim o robô não conseguia passar os redutores de velocidade muito bem. Apesar desse pequeno problema, nosso resultado foi muito satisfatório!</h3>
 			<img class="imgrobo2" src="../img/3_2.jpg">
 		</div>
-		<section class="result">		
+		<section class="result" data-aos="fade-up">		
 			<h1 class="subtitle resultado">Resultado</h1>
 			<img src="../img/equipe.jpg" class="img-resultado" alt="Equipe">
 			<h3 class="texto">Com esse robô tiramos 2° lugar na Etapa Estadual!</h3>
+		</section>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+    AOS.init({
+    	offset: 200, 
+    	duration: 800
+    });
+  </script>
 	</body>

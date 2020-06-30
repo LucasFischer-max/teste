@@ -1,6 +1,8 @@
 <!DOCTYPE HTML>
 	<head>
 		<link rel="stylesheet" type="text/css" href="../estilo.css">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+		<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Karla&family=Roboto&display=swap" rel="stylesheet">
 		<title>Robô 2020</title>
 	</head>
 	<body>
@@ -8,16 +10,24 @@
 			<a class="paginas" href="../index.html">G</a>
 		</nav>
 		<h1 class="site-title" id="pag">O Robô da Etapa Regional de 2020</h1>
-		<div class="conteudo">
+		<div class="conteudo" data-aos="fade-right">
 			<img src="../img/5.jpg">
 			<h3>Esse é o robô mais avançado que nossa equipe já construiu. Possui 2 EV3, 4 sensores de cor, 1 motor grande prara levantar e abaixar a garra, 4 motores para locomoção, 3 sensores ultrassônicos, 2 motores servos e 1 sensor de rampa, aliado a uma programação incrível! Nos testes, esse robô se prova muito apto para a competição.</h3>
 		</div>
-		<div class="conteudo2">
+		<div class="conteudo2" data-aos="fade-left">
 			<h3>Para quem quiser saber mais, pode acessar o nosso canal no Youtube, que está na parte Contatos. Para quem quiser saber mais sobre o estado da OBR em si esse ano, pode acessar a aba "Competições-Regional 2020" e acompanhar a OBR pela suas mídias.</h3>
 			<img class="imgrobo2" src="../img/5_2.jpeg">
 		</div>
-		<section class="result">		
+		<section class="result" data-aos="fade-up">		
 			<h1 class="subtitle resultado">Resultado</h1>
 			<img src="../img/2020.jpg" class="img-resultado" alt="Equipe">
 			<h3 class="texto">A etapa Regional 2020 ocorrerá em breve</h3>
+		</section>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+    AOS.init({
+    	offset: 200, 
+    	duration: 800
+    });
+  </script>
 	</body>

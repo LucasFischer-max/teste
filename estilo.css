@@ -7,6 +7,7 @@
 
 html{
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 body {
@@ -94,13 +95,14 @@ header {
 }
 
 .menu {
+	width: 100vw;
 	color: white;
 	text-decoration: none;
 	background-color: #303030;
-	position: absolute;
-	width: 100vw;
+	position: fixed;
 	top: 0px;
 	font-family: 'Karla', sans-serif;
+	transition: color, top 0.3s;
 	z-index: 1;
 	opacity: 0;
 	animation: running 0.8s menu forwards;
@@ -159,6 +161,47 @@ a {
 	background-color: white;
 	border-radius: 15px;
 	font-weight: bold;
+}
+
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 
 header {
@@ -261,7 +304,7 @@ header {
 	.cada-um .grid{
 		grid-template-columns: 250px 250px 250px;
 		justify-content: space-around;
-		margin-left: 8vw;
+		margin-left: 0;
 	}
 }
 
@@ -360,7 +403,6 @@ header {
 
 .quinta{
 	text-align: center;
-	width: 100vw;
 	justify-content: center;
 }
 
@@ -415,6 +457,7 @@ header {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	width: 100vw;
 }
 
 .contato li {

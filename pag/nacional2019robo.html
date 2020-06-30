@@ -1,6 +1,8 @@
 <!DOCTYPE HTML>
 	<head>
 		<link rel="stylesheet" type="text/css" href="../estilo.css">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+		<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Karla&family=Roboto&display=swap" rel="stylesheet">
 		<title>Robô 2019</title>
 	</head>
 	<body>
@@ -8,16 +10,24 @@
 			<a class="paginas" href="../index.html">G</a>
 		</nav>
 		<h1 class="site-title" id="pag">O Robô da Etapa Nacional de 2019</h1>
-		<div class="conteudo">
+		<div class="conteudo" data-aos="fade-right">
 			<img src="../img/4.jpeg">
 			<h3>Esse foi o quarto robô da nossa equipe. Ele tinha todos os sensores do anterior, mas houve uma grande mudança: começamos a usar 4 motores para movimentar o robô, um para cada roda. Desse modo o problema do robô anterior, de não passar os redutores de velocidade muito bem. Tudo funcionou perfeitamente!</h3>
 		</div>
-		<div class="conteudo2">
+		<div class="conteudo2" data-aos="fade-left">
 			<h3>A estrutura continuava rígida, e começamos a usar uma garra para levantar a bolinha em um compartimento, então o robô derramava as bolinhas dentro do triângulo, o que também funcionou muito bem. Tudo nesse campeonato foi um aprendizado para nós, e nos ajudou a construir o melhor robô já feito por nós!</h3>
 			<img class="imgrobo2" src="../img/4_2.jpg">
 		</div>
-		<section class="result">		
+		<section class="result" data-aos="fade-up">		
 			<h1 class="subtitle resultado">Resultado</h1>
 			<img src="../img/2019resultado.jpg" class="img-resultado" alt="Equipe">
 			<h3 class="texto">Com esse robô tiramos 13° lugar na Etapa Nacional</h3>
+		</section>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+    AOS.init({
+    	offset: 200, 
+    	duration: 800
+    });
+  </script>
 	</body>

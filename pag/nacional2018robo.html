@@ -1,6 +1,8 @@
 <!DOCTYPE HTML>
 	<head>
 		<link rel="stylesheet" type="text/css" href="../estilo.css">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+		<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Karla&family=Roboto&display=swap" rel="stylesheet">
 		<title>Robô 2018</title>
 	</head>
 	<body>
@@ -8,16 +10,24 @@
 			<a class="paginas" href="../index.html">G</a>
 		</nav>
 		<h1 class="site-title" id="pag">O Robô da Etapa Nacional de 2018</h1>
-		<div class="conteudo">
-			<img src="../img/2.jpg">
+		<div class="conteudo" data-aos="fade-right">
+			<img src="../img/2.jpg" >
 			<h3>Esse foi o segundo robô da nossa equipe. Foi com ele que fizemos nossa maior mudança até hoje: usar 2 EV3. Com isso, tinhamos mais portas para sensores e motores disponíveis. Então, começamos a usar 4 sensores de cor, para melhor detectar a linha, 2 sensores ultrassônicos na lateral, para melhor detectar a Área de Resgate, e um sensor de rampa.</h3>
 		</div>
-		<div class="conteudo2">
+		<div class="conteudo2" data-aos="fade-left">
 			<h3>O sensor da rampa foi feito com uma bolinha que corria dentro de um pequeno cano, de forma que quando o robô inclinava, a bolinha se aproximava do sensor, e o robô acelerava. A garra e demais sensores permaneceram os mesmos. Apesar de esses serem ótimos avanços, o robô desmontava sozinho as vezes, pela pressão que todos os cabos exerciam.</h3>
 			<img class="imgrobo2" src="../img/2_2.jpg">
 		</div>
-		<section class="result">		
+		<section class="result" data-aos="fade-up">		
 			<h1 class="subtitle resultado">Resultado</h1>
 			<img src="../img/2018_2resultado.jpeg" class="img-resultado" alt="Equipe">
 			<h3 class="texto">Com esse robô ficamos 21° lugar na Etapa Nacional</h3>
+		</section>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+    AOS.init({
+    	offset: 200, 
+    	duration: 800
+    });
+  </script>
 	</body>
