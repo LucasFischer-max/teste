@@ -455,8 +455,7 @@ header {
 
 .contato ul {
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
+	justify-content: center;
 	width: 100vw;
 }
 
@@ -480,7 +479,6 @@ header {
 	transform: scale(0.9);
 	transition: transform 500ms;
 	position: relative;
-	left: 10vw
 }
 
 .imagemm:active,
@@ -511,6 +509,23 @@ header {
 	align-content: center;
 	text-align: center;
 }
+
+.facebook{
+	height: 40px;
+	width: auto;
+	border-left: 0;
+	border-radius: 0px;
+	transition: 1s;
+	transform: scale(0.9);
+	transition: transform 500ms;
+}
+
+
+.facebook:active,
+.facebook:hover{
+	transform: scale(1);
+}
+
 .diferente{
 align-content: center;
 }
