@@ -8,10 +8,10 @@ function Sobre() {
     document.getElementById( 'Sobre' ).scrollIntoView();    
 };
 function Robos() {
-    document.getElementById( 'Robos' ).scrollIntoView();    
+    document.getElementById( 'Robos' ).scrollIntoView(); 
 };
 function Competicoes() {
-    document.getElementById( 'Competicoes' ).scrollIntoView();    
+    document.getElementById( 'Competicoes' ).scrollIntoView();   
 };
 function Contato() {
     document.getElementById( 'Contato' ).scrollIntoView();    
@@ -25,7 +25,7 @@ window.addEventListener("scroll", function(){
 }else {
 	if (st > lastScrollTop){
       document.getElementById("menu").style.top = "-55px";
-      document.getElementById("menu").style.backgroundColor = "black";
+      document.getElementById("menu").style.backgroundColor = "#black";
    } else {
       document.getElementById("menu").style.top = "0px";
       document.getElementById("menu").style.backgroundColor = "black";
