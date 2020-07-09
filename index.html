@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt">
-<body onload="carregando()">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,32 +8,34 @@
 		<link rel="stylesheet" href="aos.css"/>
 		<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Karla&family=Roboto&display=swap" rel="stylesheet"/>
 		<title>Gewinner</title>
-		<link rel="shortcut icon" href="/favicon.ico">
-		<link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico">
-		<link rel="icon" type="image/png" sizes="196x196" href="/favicon-192.png">
-		<link rel="icon" type="image/png" sizes="160x160" href="/favicon-160.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
-		<link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
-		<link rel="apple-touch-icon" href="/favicon-57.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="/favicon-114.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="/favicon-72.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="/favicon-144.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="/favicon-60.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="/favicon-120.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="/favicon-76.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="/favicon-152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+		<link rel="shortcut icon" href="favicon/favicon.ico">
+		<link rel="icon" sizes="16x16 32x32 64x64" href="favicon/favicon.ico">
+		<link rel="icon" type="image/png" sizes="196x196" href="favicon/favicon-192.png">
+		<link rel="icon" type="image/png" sizes="160x160" href="favicon/favicon-160.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96.png">
+		<link rel="icon" type="image/png" sizes="64x64" href="favicon/favicon-64.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16.png">
+		<link rel="apple-touch-icon" href="favicon/favicon-57.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="favicon/favicon-114.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="favicon/favicon-72.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="favicon/favicon-144.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="favicon/favicon-60.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="favicon/favicon-120.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="favicon/favicon-76.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="favicon/favicon-152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon/favicon-180.png">
 		<meta name="msapplication-TileColor" content="#FFFFFF">
 		<meta name="msapplication-TileImage" content="/favicon-144.png">
-		<meta name="msapplication-config" content="/browserconfig.xml">
+		<meta name="msapplication-config" content="favicon/browserconfig.xml">
 	</head>
+	<body id="pagina">
 	<header>
 			<nav class="menu" id="menu">
 				<ul>
 					<li id="btn-menu-mobile"><a href="javascript:void(0)" onclick="openNav()">&#9776;</a></li>
-					<li class="btn-menu" ><a href="javascript:void(0)" onclick="Sobre()">Sobre</a></li>
+					<li class="btn-menu inicio"><a href="index.html">G</a></li>
+					<li class="btn-menu"><a href="javascript:void(0)" onclick="Sobre()">Sobre</a></li>
 					<li class="btn-menu"><a href="javascript:void(0)" onclick="Robos()">Robôs</a></li>
 					<li class="btn-menu"><a href="javascript:void(0)" onclick="Competicoes()">Competições</a></li>
 					<li class="btn-menu"><a href="javascript:void(0)" onclick="Contato()">Contato</a></li>
@@ -42,10 +43,10 @@
 			</nav>
 			<div id="sidebar" class="sidenav">
 			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			  <a href="#">Sobre</a>
-			  <a href="#">Robôs</a>
-			  <a href="#">Competições</a>
-			  <a href="#">Contato</a>
+			  <a href="javascript:void(0)" onclick="Sobre2()" class="botao">Sobre</a>
+			  <a href="javascript:void(0)" onclick="Robos2()">Robôs</a>
+			  <a href="javascript:void(0)" onclick="Competicoes2()">Competições</a>
+			  <a href="javascript:void(0)" onclick="Contato2()">Contato</a>
 			</div>
 			<div id="main">
 		<h1 class="site-title">Gewinner</h1>
@@ -153,9 +154,9 @@
 		<h1 class="subtitle3" id="Contato">Contato</h1>
 		<nav class="contato">
 			<ul>
-				<li><a href="https://www.instagram.com/fischer_155/"><img class="imagemm" src="./img/instagram.png"></a></li>
-				<li><a href="https://www.youtube.com/channel/UC0ukw_MNVFE8hRK55J8CnKA?"><img class="youtube" src="./img/youtube.png"></a></li>
-				<li><a href="https://www.facebook.com/profile.php?id=100009913897593"><img src="./img/facebook.png" class="facebook"></a></li>
+				<li><a href="https://www.instagram.com/fischer_155/" target="_blank"><img class="imagemm" src="./img/instagram.png"></a></li>
+				<li><a href="https://www.youtube.com/channel/UC0ukw_MNVFE8hRK55J8CnKA?" target="_blank"><img class="youtube" src="./img/youtube.png"></a></li>
+				<li><a href="https://www.facebook.com/profile.php?id=100009913897593" target="_blank"><img src="./img/facebook.png" class="facebook"></a></li>
 			</ul>
 		</nav>
 	</div>
