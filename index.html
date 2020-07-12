@@ -30,34 +30,36 @@
 		<meta name="msapplication-config" content="favicon/browserconfig.xml">
 	</head>
 	<body id="pagina">
-	<header>
-			<nav class="menu" id="menu">
-				<ul>
-					<li id="btn-menu-mobile"><a href="javascript:void(0)" onclick="openNav()">&#9776;</a></li>
-					<li class="btn-menu inicio"><a href="index.html">G</a></li>
-					<li class="btn-menu"><a href="javascript:void(0)" onclick="Sobre()">Sobre</a></li>
-					<li class="btn-menu"><a href="javascript:void(0)" onclick="Robos()">Robôs</a></li>
-					<li class="btn-menu"><a href="javascript:void(0)" onclick="Competicoes()">Competições</a></li>
-					<li class="btn-menu"><a href="javascript:void(0)" onclick="Contato()">Contato</a></li>
-				</ul>
-			</nav>
-			<div id="sidebar" class="sidenav">
-			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			  <a href="javascript:void(0)" onclick="Sobre2()" class="botao">Sobre</a>
-			  <a href="javascript:void(0)" onclick="Robos2()">Robôs</a>
-			  <a href="javascript:void(0)" onclick="Competicoes2()">Competições</a>
-			  <a href="javascript:void(0)" onclick="Contato2()">Contato</a>
+	<header class="header">
+		<nav class="menu" id="menu">
+			<ul>
+				<li id="btn-menu-mobile"><a href="index.html">Gewinner</a></li>
+				<li id="btn-menu-mobile"><a href="javascript:void(0)" onclick="openNav()">&#9776;</a></li>
+				<li class="btn-menu inicio"><a href="index.html">G</a></li>
+				<li class="btn-menu"><a href="javascript:void(0)" onclick="Sobre()">Sobre</a></li>
+				<li class="btn-menu"><a href="javascript:void(0)" onclick="Robos()">Robôs</a></li>
+				<li class="btn-menu"><a href="javascript:void(0)" onclick="Competicoes()">Competições</a></li>
+				<li class="btn-menu"><a href="javascript:void(0)" onclick="Contato()">Contato</a></li>
+			</ul>
+		</nav>
+		<div id="sidebar" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="itens">
+			  	<a href="javascript:void(0)" onclick="Sobre2()" class="botao">Sobre</a>
+			  	<a href="javascript:void(0)" onclick="Robos2()">Robôs</a>
+			  	<a href="javascript:void(0)" onclick="Competicoes2()">Competições</a>
+			  	<a href="javascript:void(0)" onclick="Contato2()">Contato</a>
 			</div>
-			<div id="main">
+		</div>
 		<h1 class="site-title">Gewinner</h1>
 	</header>
 	<div class="grid" id="Sobre">	
-		<section class="quem-somos" id="quem-somos" data-aos="zoom-out">		
-			<h1 class="subtitle">Quem somos?</h1>
+		<section class="quem-somos" id="quem-somos" data-aos="fade-right">		
 			<img src="./img/equipe.jpg" class="img-equipe" alt="Equipe">
-			<h3 class="texto">A equipe Gewinner é uma equipe de robótica do colégio Sinodal de São Leopoldo.</h3>
+			<h3>A equipe Gewinner é uma equipe de robótica do colégio Sinodal de São Leopoldo.</h3>
 		</section>
 	</div>
+	<div class="espaco"></div>
 	<section class="cada-um">
 		<div class="grid">
 			<div data-aos="fade-right">
@@ -164,7 +166,7 @@
 	<script src="aos.js"></script>
   	<script>
     AOS.init({
-    	offset: 200, 
+    	offset: 300, 
     	duration: 800
     });
   </script>

@@ -9,14 +9,17 @@
 html{
 	scroll-behavior: smooth;
 	overflow-x: hidden;
+	width: 100vw;
 }
 
 body {
 	background-color: black;	
 	font-family:'Balsamiq Sans', normal;
-	background-size: auto 100vh;
-	height: 100vh;
 	font-size: 12px;
+	background-image: url(img/fundo.jpg);
+	background-attachment: fixed;
+	height: 100vh;
+	width: 100vw;
 }
 
 @media (min-width: 300px) {
@@ -90,27 +93,45 @@ body {
 
 header {
 	height: 100vh;
+	width: auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-attachment: fixed;
+	opacity: 0;
+	animation: running 0.8s header forwards;
+}
+
+@keyframes header {
+	100%{
+	opacity: 1;
+	}
+}
+
+#btn-menu-mobile{
+	color: white;
 }
 
 .menu {
 	width: 100vw;
 	color: white;
 	text-decoration: none;
-	background-color: #303030;
+	background-color: #1e1e1e;
 	position: fixed;
 	top: 0px;
 	font-family: 'Karla', sans-serif;
 	transition: color, top 0.3s;
-	z-index: 1;
+	z-index: 2;
 	opacity: 0;
 	animation: running 0.8s menu forwards;
 }
 
 .inicio{
 	font-family: 'Balsamiq Sans', cursive;
+}
+
+#pagina {
+	transition: 0.5s;
 }
 
 @keyframes menu {
@@ -138,6 +159,7 @@ header {
 
 .site-title {
 	color: white;
+	text-shadow: 4px 4px black;
 	text-align: center;
 	font-size: 3em;
 	font-family: 'Balsamiq Sans', cursive;	
@@ -169,17 +191,26 @@ a {
 }
 
 .sidenav {
-  height: 100%;
-  width: 0px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #303030;
-  overflow-x: hidden;
-  padding-top: 60px;
-  justify-content: space-between;
-  transition: 0.5s;
+  	height: 100vh;
+  	width: 0;
+	color: white;
+	text-decoration: none;
+	background-color: #1e1e1e;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	overflow-x: hidden;
+	font-family: 'Karla', sans-serif;
+	transition: color, top 0.3s;
+	z-index: 1;
+	justify-content: space-between;
+  	transition: 0.5s;
+	opacity: 0;
+	animation: running 0.8s menu forwards;
+}
+
+.itens{
+	margin-top: 20vh;
 }
 
 .sidenav a {
@@ -204,7 +235,8 @@ a {
 
 .sidenav .closebtn {
   position: absolute;
-  padding: 10px 40px;
+  padding: 10px 25px;
+  margin-top: 0;
   top: 0px;
   right: 0px;
   font-size: 36px;
@@ -236,17 +268,27 @@ header {
 }
 
 .quem-somos{
-	padding: 1em;
-	height: 100vh;
+	height: 70vh;
+	width: 44vw;
+	border-radius: 20px;
+	margin-left: 28vw;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 19em;
+	color: white;
+	opacity: 0.2;
+	border-top: 1em;
+	font-size: 1.2em;
+	text-align: center;
+	line-height: 2em;
 }
 
 .quem-somos img {
 	height: auto;
-	width: 60vw;
-	position: center;
+	margin-left: 0;
+	margin-top: 4vh;
+	width: 40vw;
 	transition: 1s;
 	transform: scale(0.99);
 	transition: transform 500ms;
@@ -278,6 +320,11 @@ header {
 
 .text-white{
 	color: white;
+}
+
+.espaco{
+	height: 25vh;
+	width: 100vw;
 }
 
 .nome{
@@ -548,8 +595,6 @@ align-content: center;
 #pag {
 	text-align: center;
 	margin-top: 45vh;
-	background-image: url(../img/1.jpg);
-	height: 100vh;
 }
 
 .conteudo {
@@ -595,6 +640,7 @@ align-content: center;
 
 img{
 	border-radius: 20px;
+	z-index: 0;
 }
 
 .paginas {
